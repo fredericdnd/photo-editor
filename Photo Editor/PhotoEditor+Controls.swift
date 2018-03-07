@@ -95,9 +95,9 @@ extension PhotoEditorViewController {
         //clear drawing
         canvasImageView.image = nil
         //clear stickers and textviews
-        for subview in canvasImageView.subviews {
-            subview.removeFromSuperview()
-        }
+//        for subview in canvasImageView.subviews {
+//            subview.removeFromSuperview()
+//        }
     }
     
     @IBAction func continueButtonPressed(_ sender: Any) {
