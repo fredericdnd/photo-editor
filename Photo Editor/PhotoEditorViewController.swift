@@ -27,6 +27,7 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var colorPickerViewBottomConstraint: NSLayoutConstraint!
     
     //Controls
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var cropButton: UIButton!
     @IBOutlet weak var stickerButton: UIButton!
     @IBOutlet weak var drawButton: UIButton!
@@ -99,6 +100,14 @@ public final class PhotoEditorViewController: UIViewController {
         configureCollectionView()
         stickersViewController = StickersViewController(nibName: "StickersViewController", bundle: Bundle(for: StickersViewController.self))
         hideControls()
+        
+        // Apply shadow
+        closeButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        stickerButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        drawButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        textButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        shareButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        clearButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
     }
     
     func configureCollectionView() {
