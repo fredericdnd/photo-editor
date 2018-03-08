@@ -36,7 +36,6 @@
                 <outlet property="textButton" destination="0wH-LJ-SyD" id="ofN-bp-ZaE"/>
                 <outlet property="topGradient" destination="Tcy-Eu-UMd" id="USZ-b5-E7U"/>
                 <outlet property="topToolbar" destination="3MS-N5-3xY" id="kzY-Ga-SoQ"/>
-                <outlet property="trashButton" destination="4vW-ir-bNV" id="2aw-2S-Ls7"/>
                 <outlet property="view" destination="HPk-Bg-V0q" id="eF4-Ac-Nav"/>
             </connections>
         </placeholder>
@@ -154,31 +153,14 @@
                                 <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="jpW-r4-cpQ"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-ir-bNV">
-                            <rect key="frame" x="118" y="2" width="30" height="38"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="38" id="6Pm-Vn-vFj"/>
-                                <constraint firstAttribute="width" constant="30" id="lZQ-YI-O7E"/>
-                            </constraints>
-                            <size key="titleShadowOffset" width="1" height="0.0"/>
-                            <state key="normal" image="trashButton">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="bqQ-PC-XcA"/>
-                            </connections>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="9an-1W-thw" firstAttribute="centerY" secondItem="3MS-N5-3xY" secondAttribute="centerY" id="1bY-xX-lhc"/>
                         <constraint firstAttribute="bottom" secondItem="Doi-2Z-r5q" secondAttribute="bottom" id="5UH-pm-VlP"/>
                         <constraint firstAttribute="trailing" secondItem="Doi-2Z-r5q" secondAttribute="trailing" constant="12" id="Ank-Rs-hHo"/>
-                        <constraint firstItem="4vW-ir-bNV" firstAttribute="leading" secondItem="9an-1W-thw" secondAttribute="trailing" constant="40" id="HeL-2F-dZE"/>
                         <constraint firstAttribute="height" constant="42" id="RSV-Dw-76F"/>
                         <constraint firstItem="Doi-2Z-r5q" firstAttribute="top" secondItem="3MS-N5-3xY" secondAttribute="top" id="YMJ-5J-baj"/>
-                        <constraint firstItem="4vW-ir-bNV" firstAttribute="centerY" secondItem="3MS-N5-3xY" secondAttribute="centerY" id="gob-IM-ZzS"/>
                         <constraint firstItem="9an-1W-thw" firstAttribute="leading" secondItem="3MS-N5-3xY" secondAttribute="leading" constant="40" id="lPL-cU-BVr"/>
                     </constraints>
                 </view>
