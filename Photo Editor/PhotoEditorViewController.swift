@@ -28,6 +28,7 @@ public final class PhotoEditorViewController: UIViewController {
     
     //Controls
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var trashButton: UIButton!
     @IBOutlet weak var cropButton: UIButton!
     @IBOutlet weak var stickerButton: UIButton!
     @IBOutlet weak var drawButton: UIButton!
@@ -35,6 +36,8 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var topGradient: UIView!
+    @IBOutlet weak var bottomGradient: UIView!
     
     public var image: UIImage?
     /**
@@ -108,6 +111,13 @@ public final class PhotoEditorViewController: UIViewController {
         textButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         shareButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         clearButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        
+        // Gradients
+        topGradient.backgroundColor = UIColor.clear
+        topGradient.applyGradient(color1: UIColor.black.withAlphaComponent(0.4), color2: UIColor.black.withAlphaComponent(0.0), direction: .bottom)
+        
+        bottomGradient.backgroundColor = UIColor.clear
+        bottomGradient.applyGradient(color1: UIColor.black.withAlphaComponent(0.4), color2: UIColor.black.withAlphaComponent(0.0), direction: .top)
     }
     
     func configureCollectionView() {
