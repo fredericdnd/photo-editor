@@ -148,6 +148,11 @@ public final class PhotoEditorViewController: UIViewController {
         topToolbar.isHidden = hide
         bottomToolbar.isHidden = hide
     }
+    
+    public func addTrashAction(target: Any?, action: Selector) {
+        trashButton.addTarget(target, action: action, for: .touchUpInside)
+    }
+    
 }
 
 extension PhotoEditorViewController: ColorDelegate {
@@ -160,8 +165,3 @@ extension PhotoEditorViewController: ColorDelegate {
         }
     }
 }
-
-
-
-
-
