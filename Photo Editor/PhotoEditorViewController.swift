@@ -111,6 +111,8 @@ public final class PhotoEditorViewController: UIViewController {
         textButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         shareButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         clearButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        trashButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
+        doneButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         
         // Gradients
         topGradient.backgroundColor = UIColor.clear
@@ -151,8 +153,9 @@ public final class PhotoEditorViewController: UIViewController {
     
     public func addTrashAction(target: Any?, action: Selector) {
         trashButton.addTarget(target, action: action, for: .touchUpInside)
+
     }
-    
+
 }
 
 extension PhotoEditorViewController: ColorDelegate {
