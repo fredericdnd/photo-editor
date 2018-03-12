@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoEditorViewController" customModule="iOSPhotoEditor" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoEditorViewController" customModule="Photo_Editor" customModuleProvider="target">
             <connections>
                 <outlet property="bottomGradient" destination="klN-Uz-Cgv" id="FDT-np-DnH"/>
                 <outlet property="bottomToolbar" destination="87h-1G-t5q" id="Pzi-Dw-qOq"/>
@@ -139,7 +139,7 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9an-1W-thw">
+                        <button opaque="NO" alpha="0.0" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9an-1W-thw">
                             <rect key="frame" x="40" y="2.5" width="38" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="38" id="RVn-YT-7dm"/>
@@ -154,7 +154,7 @@
                                 <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="jpW-r4-cpQ"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq9-Hq-zCy">
+                        <button opaque="NO" alpha="0.0" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq9-Hq-zCy">
                             <rect key="frame" x="118" y="2" width="38" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="38" id="N9z-65-hup"/>
