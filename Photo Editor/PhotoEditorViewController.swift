@@ -16,9 +16,6 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     //To hold the drawings and stickers
     @IBOutlet weak var canvasImageView: UIImageView!
-
-    @IBOutlet weak var topToolbar: UIView!
-    @IBOutlet weak var bottomToolbar: UIView!
     
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var deleteView: UIView!
@@ -27,9 +24,6 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var colorPickerViewBottomConstraint: NSLayoutConstraint!
     
     //Controls
-    @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var trashButton: UIButton!
-    @IBOutlet weak var cropButton: UIButton!
     @IBOutlet weak var stickerButton: UIButton!
     @IBOutlet weak var drawButton: UIButton!
     @IBOutlet weak var textButton: UIButton!
@@ -105,13 +99,11 @@ public final class PhotoEditorViewController: UIViewController {
         hideControls()
         
         // Apply shadow
-        closeButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         stickerButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         drawButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         textButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         shareButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         clearButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
-        trashButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         doneButton.applyShadow(y: 0.0, radius: 4.0, opacity: 0.2)
         
         // Gradients
@@ -147,13 +139,12 @@ public final class PhotoEditorViewController: UIViewController {
     }
     
     func hideToolbar(hide: Bool) {
-        topToolbar.isHidden = hide
-        bottomToolbar.isHidden = hide
-    }
-    
-    public func addTrashAction(target: Any?, action: Selector) {
-        trashButton.addTarget(target, action: action, for: .touchUpInside)
-
+        stickerButton.isHidden = hide
+        drawButton.isHidden = hide
+        textButton.isHidden = hide
+        
+        clearButton.isHidden = hide
+        shareButton.isHidden = hide
     }
 
 }
