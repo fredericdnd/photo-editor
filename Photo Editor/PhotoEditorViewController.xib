@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoEditorViewController" customModule="iOSPhotoEditor" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoEditorViewController" customModule="Photo_Editor" customModuleProvider="target">
             <connections>
                 <outlet property="bottomGradient" destination="klN-Uz-Cgv" id="oXu-U8-Apa"/>
                 <outlet property="canvasImageView" destination="n3p-yR-4xc" id="OED-1L-YMz"/>
@@ -135,7 +135,7 @@
                         <constraint firstAttribute="height" constant="60" id="Xjh-Wx-Tbx"/>
                     </constraints>
                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                    <state key="normal" image="doneButton">
+                    <state key="normal" image="sendButton">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                     </state>
@@ -239,6 +239,7 @@
         <image name="doneButton" width="60" height="60"/>
         <image name="drawButton" width="37" height="37"/>
         <image name="eraseButton" width="44" height="44"/>
+        <image name="sendButton" width="60" height="60"/>
         <image name="stickersButton" width="38" height="38"/>
         <image name="textButton" width="34" height="38"/>
         <image name="trashButton" width="30" height="38"/>
