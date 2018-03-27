@@ -55,9 +55,9 @@ class StickersViewController: UIViewController, UIGestureRecognizerDelegate {
                            height: view.frame.height - 40)
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        let width = (CGFloat) ((screenSize.width - 30) / 3.0)
-        layout.itemSize = CGSize(width: width, height: 100)
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 30, right: 10)
+        let width: CGFloat = (screenSize.width - 30.0) / 3
+        layout.itemSize = CGSize(width: width, height: 160)
         
         collectioView = UICollectionView(frame: frame, collectionViewLayout: layout)
         collectioView.backgroundColor = .clear
