@@ -102,6 +102,16 @@ class StickersViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.scrollView.isScrollEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            self.scrollView.setContentOffset(CGPoint(x: self.scrollView.bounds.width / 2, y: 0.0), animated: true)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                self.scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+                self.scrollView.isScrollEnabled = true
+            }
+        }
+        
         UIView.animate(withDuration: 0.6) { [weak self] in
             guard let `self` = self else { return }
             let frame = self.view.frame
@@ -115,12 +125,12 @@ class StickersViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        collectioView.frame = CGRect(x: 0,
+        collectioView.frame = CGRect(x: scrollView.frame.size.width,
                                      y: 0,
                                      width: UIScreen.main.bounds.width,
                                      height: view.frame.height - 40)
         
-        emojisCollectioView.frame = CGRect(x: scrollView.frame.size.width,
+        emojisCollectioView.frame = CGRect(x: 0,
                                            y: 0,
                                            width: UIScreen.main.bounds.width,
                                            height: view.frame.height - 40)
